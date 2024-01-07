@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="dcg-calculator-api-container">
+
+<head>
+    <link rel="stylesheet" href="calc.css" />
+    <title>Scientific Calculator - EduTools</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .dcg-keypad-btn {
+            border-radius: 100px !important;
+        }
+
+        .dcg-scientific-container {
+            border-radius: 20px !important;
+            overflow: hidden !important;
+            outline: 1px solid #b0b0b0 !important;
+        }
+
+        .dcg-keypad-control-toggle,
+        .dcg-ctrl-toggle-option,
+        .dcg-ctrl-toggle-cover {
+            border-radius: 100px !important;
+            overflow: hidden !important;
+        }
+    </style>
+    <a href="/"
+        style="text-decoration: none;position: fixed;top: 10px;left: 10px;background-color: #333; width: 60px;height: 60px; border-radius: 100px;display: flex; align-items: center;justify-content: center;z-index: 999999;color: white;">
+        <span class="material-symbols-outlined">
+            home
+        </span> </a>
+</head>
+
+<body dcg-platform="www" data-user-info="{}">
+    <div id="main-container"></div>
+    <script
+        type="text/javascript">        if (typeof Desmos === 'undefined') Desmos = {}; Desmos.config = { "sciKeypad": true, "degreeMode": true };    </script>
+    <script src="darkreader.js"></script>
+    <script>
+        DarkReader.auto({
+            brightness: 100,
+            contrast: 90,
+            sepia: 10
+        });
+    </script>
+    <script src="calc.js"></script>
+
+</body>
+
+</html>
