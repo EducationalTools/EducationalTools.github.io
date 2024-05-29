@@ -4,62 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/common.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script type="importmap">
+      {
+        "imports": {
+          "@material/web/": "https://esm.run/@material/web/"
+        }
+      }
+    </script>
+    <script type="module">
+        import '@material/web/all.js';
+        import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+        document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+    </script>
     <title>EduTools</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <style>
-        * {
-            font-family: 'Roboto', sans-serif;
-        }
-
-        body {
-            background-color: #222;
-            color: white;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            gap: 10px;
-
-        }
-
-        a {
-            padding: 20px;
-            color: white;
-            text-decoration: none;
-            background-color: #333;
-            padding: 20px;
-            border-radius: 10px;
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
 </head>
 
 <body>
-    <h1
-        style="font-weight: 100;padding: 20px;margin: 0; background-color: #333;width: fit-content;border-radius: 10px;">
-        EduTools
-    </h1>
-    <a href="/calc.html">
-        <span class="material-symbols-outlined">
-            calculate
-        </span>
-        Calculator
-    </a>
-    <a href="/more" style="cursor: default;">
-        <span class="material-symbols-outlined">
-            build
-        </span>
-        More Coming Soon!
-    </a>
+    <h1 class="md-typescale-display-medium">EduTools</h1>
+    <md-list style="max-width: 300px;">
+        <md-list-item type="link" href="/calc" target="_blank">
+            <div slot="headline">Calculator</div>
+        </md-list-item>
+        <md-list-item oncontextmenu="alert()">
+            <div slot="headline">More coming soon</div>
+        </md-list-item>
+    </md-list>
 </body>
 
 </html>
