@@ -3,7 +3,7 @@ var a = 0
 function ee() {
     a = a + 1;
     if (a == 10) {
-        location = "sus"
+        notsus()
     }
 }
 
