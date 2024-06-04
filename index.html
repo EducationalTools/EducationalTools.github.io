@@ -56,7 +56,7 @@
         Calculator
     </a>
     <a id="more" oncontextmenu="ee()" style="cursor: default;">
-        <span class="material-symbols-outlined">
+        <span id="icon" class="material-symbols-outlined">
             build
         </span>
         More Coming Soon!
@@ -83,6 +83,7 @@
             notsuselement.style.height = "100%";
             notsuselement.style.backgroundColor = "black";
             document.querySelector("body").appendChild(notsuselement);
+            document.getElementById("icon").style.rotate = "45deg"
 
             document.addEventListener("visibilitychange", function () {
                 notsuselement.style.display = "none";
