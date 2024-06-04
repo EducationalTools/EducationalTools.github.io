@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="menu.css" />
+  <link rel="stylesheet" href="common.css" />
+  <link rel="icon" href="icon-512.png" sizes="any" />
+
+  <title>EduTools</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="loader">Loading...</div>
+  <div class="menucontainer hide" onclick="closeMenu()">
+    <div class="menu"></div>
+  </div>
+  <script>!function (w, d, i, s) { function l() { if (!d.getElementById(i)) { var f = d.getElementsByTagName(s)[0], e = d.createElement(s); e.type = "text/javascript", e.async = !0, e.src = "https://canny.io/sdk.js", f.parentNode.insertBefore(e, f) } } if ("function" != typeof w.Canny) { var c = function () { c.q.push(arguments) }; c.q = [], w.Canny = c, "complete" === d.readyState ? l() : w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1) } }(window, document, "canny-jssdk", "script");</script>
+
+  <div class="sidebar">
+    <div class="icnbtn home" onclick="location ='/more/u'">
+      <span class="material-symbols-rounded"> home </span>
+    </div>
+    <div class="icnbtn" onclick="menu('gmae')">
+      <span class="material-symbols-rounded"> sports_esports </span>
+    </div>
+    <div class="icnbtn" onclick="menu('app')">
+      <span class="material-symbols-rounded"> apps </span>
+    </div>
+    <div class="icnbtn" onclick="menu('tool')">
+      <span class="material-symbols-rounded"> build </span>
+    </div>
+    <div class="icnbtn" onclick="window.open('https://inglan2.github.io/SchoolDocs')">
+      <span class="material-symbols-rounded"> library_books </span>
+    </div>
+    <div class="icnbtn" data-canny-changelog>
+      <span class="material-symbols-rounded"> notifications </span>
+    </div>
+    <div class="icnbtn" onclick="menu('more')">
+      <span class="material-symbols-rounded"> more_vert </span>
+    </div>
+  </div>
+  <script>
+    Canny('initChangelog', {
+      appID: '65eae5dcdc0b7bc8257a4736',
+      position: 'top',
+      align: 'left',
+      theme: 'dark',
+    });
+  </script>
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 6, density: { enable: true, value_area: 800 } },
+        color: { value: "#222222" },
+        shape: {
+          type: "polygon",
+          stroke: { width: 0, color: "#000" },
+          polygon: { nb_sides: 6 },
+          image: { src: "img/github.svg", width: 100, height: 100 },
+        },
+        opacity: {
+          value: 0.3,
+          random: true,
+          anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
+        },
+        size: {
+          value: 160,
+          random: false,
+          anim: { enable: true, speed: 10, size_min: 40, sync: false },
+        },
+        line_linked: {
+          enable: false,
+          distance: 200,
+          color: "#ffffff",
+          opacity: 1,
+          width: 2,
+        },
+        move: {
+          enable: true,
+          speed: 8,
+          direction: "none",
+          random: false,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: { enable: false, rotateX: 600, rotateY: 1200 },
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: false, mode: "grab" },
+          onclick: { enable: false, mode: "repulse" },
+          resize: true,
+        },
+        modes: {
+          grab: { distance: 400, line_linked: { opacity: 1 } },
+          bubble: {
+            distance: 400,
+            size: 40,
+            duration: 2,
+            opacity: 8,
+            speed: 3,
+          },
+          repulse: { distance: 200, duration: 0.4 },
+          push: { particles_nb: 4 },
+          remove: { particles_nb: 2 },
+        },
+      },
+      retina_detect: true,
+    });
+  </script>
+  <script src="js-yaml.js"></script>
+  <script src="menu.js"></script>
+</body>
+
+</html>
