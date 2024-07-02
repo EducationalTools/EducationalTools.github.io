@@ -5,7 +5,8 @@ fetch("config.json").then(function (r) {
             card.innerHTML = gmae.name;
             card.href = gmae.path;
             card.style.backgroundImage = `url()`;
-            card.style.backgroundImage = (`url('${gmae.img}')`)
+            card.style.backgroundImage = (`url('${gmae.img}')`);
+            card.classList.add("card")
             document.getElementById("gmaes").appendChild(card);
         });
     })
