@@ -1,6 +1,8 @@
 setTimeout(() => {
     if (window.location == window.parent.location) {
-        location = "/";
+        if (location.search != "?dev") {
+            location = "/";
+        }
     }
 }, 1);
 
