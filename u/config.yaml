@@ -1,6 +1,0 @@
-games:
-  - name: "Minecraft"
-    id: "mc"
-    description: "punch trees and then get explode by green blob"
-    repo: "g-1"
-    path: "/mc/index.html"
