@@ -78,4 +78,6 @@ body {
   color: var(--md-sys-color-on-primary-container);
   text-decoration: none;
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  position: relative;
 }

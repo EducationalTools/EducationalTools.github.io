@@ -7,6 +7,8 @@ fetch("config.json").then(function (r) {
             card.style.backgroundImage = `url()`;
             card.style.backgroundImage = (`linear-gradient(to bottom, transparent, black), url('${gmae.img}')`);
             card.classList.add("card")
+            ripple = document.createElement("md-ripple")
+            card.appendChild(ripple)
             document.getElementById("gmaes").appendChild(card);
         });
     })
