@@ -87,11 +87,13 @@
 
             document.addEventListener("visibilitychange", function () {
                 notsuselement.style.display = "none";
+                notsuselement.blur()
             })
 
             document.addEventListener("keydown", function (event) {
                 if (event.key === "\\") {
                     notsuselement.style.display = "block";
+                    notsuselement.focus()
                 }
             });
         }
