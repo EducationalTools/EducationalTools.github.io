@@ -1,7 +1,8 @@
-if (window.location == window.parent.location) {
-    location = "/"
-}
-
+setTimeout(() => {
+    if (window.location == window.parent.location) {
+        location = "/";
+    }
+}, 1);
 
 fetch("config.json").then(function (r) {
     r.text().then(function (config) {
