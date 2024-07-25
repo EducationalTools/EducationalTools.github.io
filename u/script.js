@@ -7,6 +7,11 @@ fetch("config.json").then(function (r) {
                 card = document.createElement("a")
                 card.innerHTML = gmae.name;
                 card.href = gmae.path;
+                card.onclick = function () {
+                    document.getElementById("playwrapper").classList.remove("hide");
+                    document.getElementById("gmaeframe").src = gmae.path;
+                    return false;
+                };
                 card.style.backgroundImage = `url()`;
                 card.style.backgroundImage = (`linear-gradient(to bottom, transparent, black), url('${gmae.img}')`);
                 card.classList.add("card")
@@ -17,3 +22,8 @@ fetch("config.json").then(function (r) {
         })
     }
 })
+
+function closeDialog(){
+    document.getElementById("playwrapper").classList.add("hide");
+    document.getElementById("gmaeframe").src = "";
+}

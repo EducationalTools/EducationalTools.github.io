@@ -50,6 +50,11 @@
   --md-sys-color-surface-container-highest: rgb(51 54 46);
 }
 
+* {
+  transition-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--md-sys-color-background);
   color: var(--md-sys-color-on-background);
@@ -78,4 +83,36 @@ body {
   font-family: "Roboto", sans-serif;
   overflow: hidden;
   position: relative;
+}
+
+#playwrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #00000050;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  align-items: end;
+  transition-duration: 300ms;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+#playdialog {
+  width: 100%;
+  flex-grow: 1;
+  background-color: var(--md-sys-color-background);
+  border-radius: 20px;
+}
+
+#gmaeframe {
+  width: 100%;
+  height: 100%;
+}
+
+#playwrapper.hide {
+  transform:translate(0, 100%);
 }
