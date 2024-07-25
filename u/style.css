@@ -50,6 +50,10 @@
   --md-sys-color-surface-container-highest: rgb(51 54 46);
 }
 
+* {
+  transition-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000); /* easeOutExpo */
+}
+
 body {
   background-color: var(--md-sys-color-background);
   color: var(--md-sys-color-on-background);
@@ -90,6 +94,7 @@ body {
   border-radius: 0 0 20px 20px;
   display: flex;
   align-items: end;
+  transition-duration: 300ms;
 }
 
 
@@ -99,4 +104,8 @@ body {
   height: calc(100% - 100px);
   background-color: var(--md-sys-color-background);
   border-radius: 20px 20px 0 0;
+}
+
+#playwrapper.hide {
+  transform:translate(0, 100%);
 }
