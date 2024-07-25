@@ -25,10 +25,12 @@
 <body>
   <div id="gmaes"></div>
   <div id="playwrapper" class="hide">
-    <md-filled-icon-button>
+    <md-filled-icon-button onclick="closeDialog()">
       <md-icon>close</md-icon>
     </md-filled-icon-button>
-    <div id="playdialog"></div>
+    <div id="playdialog">
+      <iframe id="gmaeframe" src="" frameborder="0"></iframe>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>

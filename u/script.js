@@ -13,7 +13,8 @@ fetch("config.json").then(function (r) {
             card.innerHTML = gmae.name;
             card.href = gmae.path;
             card.onclick = function () {
-                alert();
+                document.getElementById("playwrapper").classList.remove("hide");
+                document.getElementById("gmaeframe").src = gmae.path;
                 return false;
             };
             card.style.backgroundImage = `url()`;
@@ -25,3 +26,8 @@ fetch("config.json").then(function (r) {
         });
     })
 })
+
+function closeDialog(){
+    document.getElementById("playwrapper").classList.add("hide");
+    document.getElementById("gmaeframe").src = "";
+}
