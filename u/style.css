@@ -80,12 +80,23 @@ body {
   position: relative;
 }
 
-#playdialog {
+#playwrapper {
   position: fixed;
-  top: 50px;
+  top: 0;
   left: 0;
-  height: calc(100vh - 50px);
+  height: 100vh;
   width: 100vw;
+  background-color: #00000050;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  align-items: end;
+}
+
+
+
+#playdialog {
+  width: 100%;
+  height: calc(100% - 100px);
   background-color: var(--md-sys-color-background);
   border-radius: 20px 20px 0 0;
 }
