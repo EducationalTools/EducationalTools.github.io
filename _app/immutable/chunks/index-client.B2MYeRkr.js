@@ -1,0 +1,1 @@
+import{v as t,w as e,x as u,y as a}from"./utils.gTppMu0b.js";import{l as c}from"./index.BFqC5wTN.js";function l(n){t===null&&e(),c&&t.l!==null?f(t).m.push(n):u(()=>{const o=a(n);if(typeof o=="function")return o})}function r(n){t===null&&e(),l(()=>()=>a(n))}function f(n){var o=n.l;return o.u??(o.u={a:[],b:[],m:[]})}export{r as a,l as o};
