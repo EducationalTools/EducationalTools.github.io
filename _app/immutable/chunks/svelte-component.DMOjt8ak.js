@@ -1,0 +1,1 @@
+import{d as c,E as i,e as s,h as r,f as h,i as d,j as p}from"./utils.Dqm949MS.js";function u(f,t,o){r&&h();var n=f,a,e;c(()=>{a!==(a=t())&&(e&&(d(e),e=null),a&&(e=s(()=>o(n,a))))},i),r&&(n=p)}export{u as c};
