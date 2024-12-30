@@ -1,0 +1,1 @@
+const s=[{id:"test",name:"Test Game",description:"This is a test game",url:"/_app/tools/test/index.html"},{id:"test2",name:"Test Game 2",description:"This is a test game 2",url:"/_app/tools/test2/index.html"}];function a(t){return s.find(e=>e.id===t)}export{s as a,a as g};
