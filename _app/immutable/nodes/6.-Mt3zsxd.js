@@ -1,1 +1,0 @@
-import"../chunks/CWj6FrbW.js";import"../chunks/69_IOA4Y.js";import{f as o,a as r}from"../chunks/C2_OUsZq.js";var e=o('<iframe src="https://educationaltools.github.io/status/" title="Status" frameborder="0" class="h-full w-full"></iframe>');function f(t){var a=e();r(t,a)}export{f as component};

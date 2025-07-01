@@ -1,0 +1,1 @@
+import{f as r,a as t}from"../chunks/16kX-NH5.js";import"../chunks/DsoziSXi.js";var i=r('<div class="container mx-auto flex flex-col p-3"><h1 class="text-3xl">Host a mirror</h1> Coming soon</div>');function s(o){var a=i();t(o,a)}export{s as component};
