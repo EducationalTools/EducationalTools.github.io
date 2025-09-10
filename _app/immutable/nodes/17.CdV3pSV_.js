@@ -1,0 +1,1 @@
+import{r as e}from"../chunks/djvsYbDl.js";function o(){e(302,"/tools/rich-text-editor")}const r=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{r as universal};
