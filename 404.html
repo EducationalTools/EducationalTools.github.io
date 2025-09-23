@@ -5,34 +5,40 @@
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
-		<link rel="modulepreload" href="/_app/immutable/entry/start.DDwkwKJr.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/oEhbfRK6.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/WtX1KPjl.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/8W1ZFGhz.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/DwBxj07P.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/start.DYsTh6N4.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BKn10c7H.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/91ucGuMU.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/zOeN_PB6.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/BpwvG457.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/D0iwhpLH.js">
-		<link rel="modulepreload" href="/_app/immutable/entry/app.DlsZc0rV.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.BgycN4AA.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/CqHE2nnZ.js">
 		<link rel="modulepreload" href="/_app/immutable/chunks/Bzak7iHL.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/DyZeaouC.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/BxyT-HaH.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/BNZORXRz.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/kzG8n2m5.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/D6YONHPi.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/KUXNiUzL.js">
+		<link rel="modulepreload" href="/_app/env.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 			<script>
 				{
-					__sveltekit_170vmnn = {
-						base: ""
+					__sveltekit_1xwqw2h = {
+						base: "",
+						env: null
 					};
 
 					const element = document.currentScript.parentElement;
 
-					Promise.all([
-						import("/_app/immutable/entry/start.DDwkwKJr.js"),
-						import("/_app/immutable/entry/app.DlsZc0rV.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element);
+					import("/_app/env.js").then(({ env }) => {
+						__sveltekit_1xwqw2h.env = env;
+
+						Promise.all([
+							import("/_app/immutable/entry/start.DYsTh6N4.js"),
+							import("/_app/immutable/entry/app.BgycN4AA.js")
+						]).then(([kit, app]) => {
+							kit.start(app, element);
+						});
 					});
 				}
 			</script>
