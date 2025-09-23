@@ -1,1 +1,1 @@
-export const env={"PUBLIC_CONVEX_URL":"https://elated-toad-832.convex.cloud","PUBLIC_CLERK_PUBLISHABLE_KEY":"pk_live_Y2xlcmsuZWR1dG9vbHMuaW5nby5hdSQ"}
+export const env={"PUBLIC_CONVEX_URL":"https://elated-toad-832.convex.cloud"}
