@@ -1,1 +1,0 @@
-export const env={"PUBLIC_CONVEX_URL":"https://elated-toad-832.convex.cloud"}
